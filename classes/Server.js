@@ -115,6 +115,7 @@ class Server {
         }
 
         this.permit(res, allowed);
+        
         this.sessionsManager.getCookies(req);
         if (req.method.toLowerCase() == 'get') {
             req.sessionId = this.sessionsManager.createNODESSID(res, true);
