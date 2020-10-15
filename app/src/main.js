@@ -1,4 +1,4 @@
 const { Base } = require('@thekade/base');
-window.base = new Base();
+window.B = Base;
 
 console.log("Hello base");
