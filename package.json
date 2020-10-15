@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Kade-95/kerd#readme",
   "dependencies": {
-    "@thekade/base": "^1.1.5",
+    "@thekade/base": "^1.1.6",
     "bcrypt": "^5.0.0",
     "jsdom": "^16.2.2",
     "mongodb": "^3.5.7",
