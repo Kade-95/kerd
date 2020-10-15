@@ -1,0 +1,38 @@
+{
+  "name": "@thekade/kerd",
+  "version": "1.0.0",
+  "description": "A JavaScript Lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon app/index.js",
+    "build": "browserify ./app/src/main.js -p esmify > ./app/public/bundle.js -d",
+    "bundle": "browserify ./app/src/main.js -p esmify > ./app/public/bundle.js -d --plugin tinyify",
+    "start": "nodemon start",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kade-95/kerd.git"
+  },
+  "author": "thekade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kade-95/kerd/issues"
+  },
+  "homepage": "https://github.com/Kade-95/kerd#readme",
+  "dependencies": {
+    "@thekade/base": "^1.1.0",
+    "bcrypt": "^5.0.0",
+    "jsdom": "^16.2.2",
+    "mongodb": "^3.5.7",
+    "mysql": "^2.18.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "browser-resolve": "^2.0.0",
+    "esmify": "^2.1.1",
+    "tinyify": "^3.0.0"
+  }
+}
