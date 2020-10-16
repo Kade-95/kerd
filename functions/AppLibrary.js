@@ -22,11 +22,11 @@ function AppLibrary() {
             let target = anchor.getAttribute('target');
 
             if (target == '_blank') {//check if it is for new page
-                window.open(func.prepareUrl(url));
+                window.open(self.prepareUrl(url));
             }
             else if (!func.isnull(url)) {
                 event.preventDefault();//block and open inside as webapp
-                if (func.prepareUrl(url) != location.href) window.history.pushState('page', 'title', url);
+                if (self.prepareUrl(url) != location.href) window.history.pushState('page', 'title', url);
                 callback();
             }
         });
