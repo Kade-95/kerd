@@ -194,7 +194,7 @@ class Server {
     recordSession(params = { period: '', remember: '', server: { address: '', name: '', user: '', password: '', local: true } }) {
         this.allowSessions = true;
 
-        this.runParallel({
+        func.runParallel({
             start: this.sessionsManager.startSessions(params),
             clear: this.sessionsManager.clearOldSessions()
         }, () => {
@@ -237,7 +237,7 @@ class Server {
     }
 
     timeLog(...data) {
-        let time = `[${this.time()}]:`;
+        let time = `[${func.time()}]:`;
         console.log(time, ...data);
     }
 
