@@ -7,10 +7,14 @@ const {
     Components,
     Compression,
     ColorPicker,
+    ArrayLibrary,
+    AnalysisLibrary,
+    ObjectsLibrary,
+    MathsLibrary
 } = require('@thekade/base');
 
-const AppLibrary = require('../functions/AppLibrary');
-const IndexedLibrary = require('../functions/IndexedLibrary');
+const AppLibrary = require('./functions/AppLibrary');
+const IndexedLibrary = require('./functions/IndexedLibrary');
 
 module.exports = {
     Base,
@@ -22,5 +26,9 @@ module.exports = {
     Compression,
     ColorPicker,
     IndexedLibrary,
-    AppLibrary
+    AppLibrary,
+    ArrayLibrary,
+    AnalysisLibrary,
+    ObjectsLibrary,
+    MathsLibrary
 }
