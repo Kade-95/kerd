@@ -1,12 +1,19 @@
 const {
     Base,
-    Func,
-    NeuralNetwork,
-    Matrix,
-    Template,
-    Components,
-    Compression,
     ColorPicker,
+    Period,
+    Matrix,
+    Func,
+    Components,
+    Template,
+    NeuralNetwork,
+    Icons,
+    Shadow,
+    ArrayLibrary,
+    ObjectsLibrary,
+    MathsLibrary,
+    AnalysisLibrary,
+    Compression
 } = require('@thekade/base');
 
 const Server = require('./classes/Server');
@@ -17,16 +24,23 @@ const MongoLibrary = require('./functions/MongoLibrary');
 
 module.exports = {
     Base,
-    Func,
-    NeuralNetwork,
-    Matrix,
-    Template,
-    Components,
-    Compression,
     ColorPicker,
-    SessionsManager,
+    Period,
+    Matrix,
+    Func,
+    Components,
+    Template,
+    NeuralNetwork,
+    Icons,
+    Shadow,
+    ArrayLibrary,
+    ObjectsLibrary,
+    MathsLibrary,
+    AnalysisLibrary,
+    Compression,
     Server,
-    MongoLibrary,
+    SessionsManager,
+    AppLibrary,
     IndexedLibrary,
-    AppLibrary
+    MongoLibrary
 }
